@@ -1,3 +1,7 @@
+* {
+  font-family: 'Droid Sans', sans-serif;
+}
+
 body {
   background: #333537;
   color: #e6e6e6;
@@ -14,7 +18,14 @@ body {
   background: #e6e6e6;
   font-size: 2rem;
   padding: 1.5rem;
+  border-radius: 1px;
+  border: none;
 }
+
+.search-form input:focus {
+  outline: none;
+  border: none;
+} 
 
 .toast-wrap {
   position: absolute;
@@ -22,15 +33,21 @@ body {
   width: 100%;
 }
 .toast {
+  padding: 2rem;
+  border-radius: 1px;
   margin-bottom: 100px;
   display: inline-block;
   font-size: 1.5rem;
+  background: #444648;
+  color: #e6e6e6;
+  border: solid #e6e6e6 1px;
+  transition: 0.5s;
 }
 
 .toast-show {
-  display: inline-block;
+  opacity: 1;
 }
 
 .toast-hidden {
-  display: none;
+  opacity: 0;
 }

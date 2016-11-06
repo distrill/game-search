@@ -2,14 +2,12 @@ const STORAGE_KEY = 'storage-prefix';
 const storage = window.localStorage;
 
 function toast(string) {
-  const placeholderText = 'toast placeholder';
   const toastElement = document.getElementById('toast');
   toastElement.innerHTML = string;
   toastElement.className = "toast toast-show";
   window.setTimeout(() => {
-    toastElement.innerHTML = placeholderText;
     toastElement.className = "toast toast-hidden";
-  }, 1500);
+  }, 2000);
 }
 
 function set(inputValues) {
