@@ -1,0 +1,36 @@
+body {
+  background: #333537;
+  color: #e6e6e6;
+  text-align: center;
+}
+
+.search-form {
+  margin-top: 10rem;
+  height: 3rem;
+}
+
+.search-form input {
+  color: #333537;
+  background: #e6e6e6;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.toast-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.toast {
+  margin-bottom: 100px;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.toast-show {
+  display: inline-block;
+}
+
+.toast-hidden {
+  display: none;
+}
